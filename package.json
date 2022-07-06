@@ -1,0 +1,13 @@
+{
+  "name": "file-share-server",
+  "version": "1.0.0",
+  "description": "back-end of file-share",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Niccu Bagonoc",
+  "license": "ISC"
+}
