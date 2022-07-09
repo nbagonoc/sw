@@ -1,4 +1,4 @@
 /uploads_backup
-# /uploads
+/uploads
 /node_modules
 package-lock.json
