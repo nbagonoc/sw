@@ -1,5 +1,5 @@
 /uploads_backup
 /uploads
 /node_modules
-/src/datas/data.json
+data.json
 package-lock.json
