@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "publicKey": "c304a001-1ff5-4b12-9ed6-c2dd53d80672-pub",
+    "privateKey": "c304a001-1ff5-4b12-9ed6-c2dd53d80672-priv",
+    "path": "uploads/c304a001-1ff5-4b12-9ed6-c2dd53d80672-helloworld.jpeg",
+    "originalName": "helloworld.jpeg",
+    "mimeType": "image/jpeg"
+  }
+]
