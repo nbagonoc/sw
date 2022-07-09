@@ -23,9 +23,9 @@ const jsonReader = require('../helpers/jsonReader')
 
 
 // get single file
-// const getFile = (req, res) => {
-//     return res.json({success:true})
-// }
+const getFile = (req, res) => {
+    return res.json({success:true})
+}
 
 
 
@@ -90,7 +90,7 @@ const createFile = (req, res) => {
 
 module.exports = {
     // getAllFiles,
-    // getFile,
+    getFile,
     createFile,
     // namer
     // deleteFile,

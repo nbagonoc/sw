@@ -23,11 +23,11 @@ describe('files routes', () => {
                 expect(res.body.privateKey).toBeTruthy()
 
     })
-    // it('GET api/files/:pubkey It should accept “publicKey” as a request parameter and return a response stream with a MIME type representing the actual file format.', async () => {
-    //     const res = await request(app)
-    //             .get(`${path}:62d0ea90-6119-4dda-a0ee-72693ac8b007-pub`)
-    //             .expect(200)
-    //             // expect(res.body.mimetype).toBeTruthy()
+    it('GET api/files/:pubkey It should accept “publicKey” as a request parameter and return a response stream with a MIME type representing the actual file format.', async () => {
+        const res = await request(app)
+                .get(`${path}:62d0ea90-6119-4dda-a0ee-72693ac8b007-pub`)
+                .expect(200)
+                // expect(res.body.mimetype).toBeTruthy()
 
-    // })
+    })
 })
