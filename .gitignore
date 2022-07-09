@@ -1,4 +1,5 @@
 /uploads_backup
 /uploads
 /node_modules
+/stc/datas/data.json
 package-lock.json
