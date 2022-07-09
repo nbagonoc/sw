@@ -24,7 +24,17 @@ const jsonReader = require('../helpers/jsonReader')
 
 // get single file
 const getFile = (req, res) => {
-    return res.json({success:true})
+    // console.log(req.params.publickey)
+    // read data from JSON
+    // console.log(req.params)
+    jsonReader(dataPath, (err, data) => {
+        if (err) throw err
+        files = data
+        pk = req.params.publicKey
+        const searchObject = files.find((file) => file.publicKey == pk)
+        // console.log(searchObject)
+        return res.json({success:true,...searchObject})
+    })
 }
 
 
