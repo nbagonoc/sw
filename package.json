@@ -4,10 +4,20 @@
   "description": "back-end of file-share",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test",
+    "test": "jest --config --forceExit",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "author": "Niccu Bagonoc",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.16.3",
+    "jest": "^28.1.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4",
+    "uuid": "^8.3.2"
+  }
 }
