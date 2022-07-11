@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-const jsonReader = (filePath, cb) => {
-    fs.readFile(filePath, 'utf-8', (err, data) => {
+const jsonReader = async (filePath, cb) => {
+    await fs.readFile(filePath, 'utf-8', (err, data) => {
         if (err) return cb && cb(err)
         try {
             const object = JSON.parse(data)
