@@ -1,5 +1,41 @@
-<h1>FileShare</h1>
-<form action="/api/files/" method="post" enctype="multipart/form-data">
-    <input type="file" name="file">
-    <button type="submit">Upload</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="card col-4 mt-5">
+                <div class="card-body">
+                    <h5 class="card-title">FileShare</h5>
+                <form action="/api/files/" method="post" enctype="multipart/form-data">
+                    <div class="input-group mb-3">
+                        <div class="custom-file">
+                          <input type="file" name="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                      </div>
+                    <button class="btn btn-primary" type="submit">Upload</button>
+                </form>
+                <hr>
+                <p class="card-text">This is just a way for me to try it in the browser for the upload feat</p>
+                <p class="card-text">Was planning to make the client side a react app, but when you have a 9-5 job, it's difficult to find time<i>(see commit messages date lol)</i> to complete all of the task of this coding exam<i>(more like a mini POC to be honest)</i>.</p>
+                <p class="card-text">Task that were <i class="font-weight-bold">NOT</i> completed:</p>
+                <ul>
+                    <li>Client side (try the app via postman nalang :D)</li>
+                    <li>Choosing Provider ENV vars</li>
+                    <li>Provider(google, bigbucket, aws, etc...)</li>
+                    <li>Server daily upload limit</li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
