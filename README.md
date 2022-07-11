@@ -12,7 +12,7 @@ Task that were NOT COMPLETED:
 Some problems:
 * After some clode cleanup before sending this:
     * Unit test for GET and DELETE is failing sometimes
-    * I think it has to do with the promises i've used in fs module acting as my DB, or with thow I test using superscript
+    * I think it has to do with the promises i've used in fs module acting as my DB(data.json), or with thow I test using superscript
     * The issue is not being affective when workign on Postman.
 * Bugs.. bugs... bugs...
     * Well, actually just one. Sometimes the data.JSON becomes empty(including the []), which breaks the app. No idea why thats happening...
