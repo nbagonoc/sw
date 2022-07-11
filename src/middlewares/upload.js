@@ -1,9 +1,10 @@
 const multer = require('multer')
 const uuid = require('uuid').v4
+const folder = require("../configs/config").FOLDER
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, './uploads')
+        cb(null, `./${folder}`)
     },
     filename: (req, file, cb) => {
         const { originalname } = file
