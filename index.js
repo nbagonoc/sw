@@ -18,11 +18,4 @@ app.listen(port, () => console.log(`we are live at ${port}`))
 
 app.use(express.static('public'))
 
-// TESTING
-// const fs = require('fs')
-// const dataPath = './src/datas/data.json'
-// fs.readFile(dataPath, 'utf-8', (err, data) => {
-//     console.log(data)
-// })
-
 module.exports = app

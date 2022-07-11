@@ -63,7 +63,7 @@ const getFile = async (req, res) => {
 // DELETE - using privateKey
 // ------------------------------- //
 const deleteFile = (req, res) => {
-    jsonReader(dataPath, (err, data) => {
+    jsonReader(dataPath, (err, data)=> {
         if (err) throw err
         let files = data
         const pk = req.params.privateKey
@@ -76,7 +76,7 @@ const deleteFile = (req, res) => {
         let newObject = files.filter(file => file.privateKey !== pk)
         // remove data from JSON
         fs.writeFile(dataPath, JSON.stringify(newObject, null, 2), err => {
-            err ? console.log(err) : console.log('file successfully removed!')
+            // err ? console.log(err) : console.log('file successfully removed!')
         })
         return res.json({success:true})
     })
